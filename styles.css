@@ -1,0 +1,39 @@
+body {
+  background: lightgray; }
+
+h1 {
+  color: #ff0000;
+  margin: 0 auto; }
+
+h1, h2 {
+  color: #3a3a3a; }
+
+.spacingBorder1, #container h1 {
+  margin: 7px;
+  padding: 10px;
+  border: 2px solid #bdbbbb; }
+
+#samplePara {
+  color: #ff0000;
+  padding: 50px; }
+
+#list1 {
+  color: #ff0000;
+  border: 6px solid red; }
+
+#container {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #cccccc; }
+  #container p {
+    font-family: Arial;
+    font-size: 13px; }
+  #container h1 {
+    font-family: Tahoma;
+    font-size: 25px; }
+  #container h2 {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #0bd60b; }
+
+/*# sourceMappingURL=styles.css.map */

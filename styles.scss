@@ -1,0 +1,59 @@
+$myFontSize1:13px;
+$myFontSize2:18px;
+$myFontSize3:25px;
+$myMargin:0 auto;
+$myColor:#ff0000;
+$greenColor:#0bd60b;
+$myString:" Some text here ";
+$myWidth:600px;
+$myPadding:20px;
+$thickness:1px;
+$border:solid red;
+$myColor1:#202020;
+$myBackground1:#d6d6d6;
+body{
+    background:darken($myBackground1,1%);
+}
+h1{
+    color:$myColor;
+    margin:$myMargin;
+
+}
+h1, h2{
+    color:lighten($myColor1, 10%);
+}
+.spacingBorder1{
+    margin:7px;
+    padding:10px;
+    border:2px solid #bdbbbb;
+}
+@mixin border{
+    border:1px solid #cccccc;
+}
+#samplePara{
+    color:$myColor;
+    padding:$myPadding+30;
+}
+#list1{
+    color:$myColor;
+    border:$thickness+5 $border;
+}
+#container{
+    width:$myWidth;
+    margin:$myMargin;
+    @include border;
+    p{
+        font-family: Arial;
+        font-size:$myFontSize1;
+    }
+    h1{
+        font-family: Tahoma;
+        font-size:$myFontSize3;
+        @extend .spacingBorder1;
+    }
+    h2{
+        font-family: Helvetica;
+        font-size:$myFontSize2;
+        color:$greenColor;
+    }
+}
